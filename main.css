@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.box-principal {
+    height: 625px;
+    width: 80%;
+    margin-top: 32px;
+
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 94%;
+}
+
+.container-iphone {
+    width: 50%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.s9 {
+    background: url('./img/img02.jpegs');
+    width: 45%;
+    height: 100%;
+    z-index: 0;
+    margin-left: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.s9 img {
+    width: 98%;
+    height: 96%;
+}
+
+.s9-content {
+    background: url('./img/samsung.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: -100%;
+}
+
+.iphone {
+    width: 47%;
+    height: 98%;
+    border-radius: 40px;
+    margin-left: -120px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+}
+
+.iphone img {
+    height: 95%;
+    width: 95%;
+    opacity: 0;
+    display: none;
+    z-index: 0;
+
+}
+
+.iphone-content {
+    background: url('./img/iphone2.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    z-index: 600;
+    margin-left: -100%;
+}
+
+
+
+.iphone .selected {
+    display: block;
+    border-radius: 20px;
+    opacity: 1;
+    animation: slide;
+    z-index: 1;
+    animation-fill-mode: backwards;
+    animation-duration: 5.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes slide {
+
+    from {
+        opacity: 0;
+        display: none;
+    }
+
+    20% {
+        display: block;
+        opacity: 0.9;
+    }
+
+    30% {
+        opacity: 1;
+        display: block;
+    }
+
+
+    60% {
+        display: block;
+        opacity: 1;
+    }
+
+    80% {
+        display: block;
+        opacity: 0.9;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.container-login {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.logo {
+    width: 53%;
+    margin-top: 45px;
+}
+
+.perfil {
+    margin-top: 20px;
+    max-width: 85px;
+    max-height: 85px;
+}
+
+.perfil img {
+    border-radius: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.login button {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    background-color: #0095F6;
+    color: white;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.login p {
+    color: #0095F6;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -230px;
+    margin-top: 0px;
+    width: 55%;
+    height: 60%;
+    border: 1px solid #0000003c;
+    text-align: center;
+    background-color: white;
+
+}
+
+.login h1 {
+    margin-top: 20px;
+    font-family: 'Koulen', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+#img1 {
+    color: white;
+    z-index: 0;
+}
+
+.login2 {
+    width: 55%;
+    height: 13%;
+    margin-top: 12px;
+    border: 1px solid #0000003c;
+    text-align: center;
+    margin-left: -230px;
+    background-color: white;
+    font-size: 14px;
+
+}
+
+.login2 p {
+    margin: 0 10px;
+    color: #0095F6;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.login3 {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 55%;
+    height: 17%;
+    margin-left: -230px;
+    margin-bottom: -50px;
+
+}
+
+.login3 p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.appstore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+.appstore img{
+    width: 38%;
+    height: 58%;
+    padding: 0 5px;
+}
+
+footer{
+    width: 100%;
+    margin: 30px auto 10px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+footer ul li{
+    display: inline;
+    margin: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.604);
+}
+
+footer ul li:hover{
+    color: black;
+
+}
